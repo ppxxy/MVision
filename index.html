@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>MVision Software</title>
+    <link rel="stylesheet" type="text/css" href="openglStyle.css">
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+</head>
+<body>
+    <canvas id="glCanvas"></canvas>
+    <script src="utils/Matrix4f.js"></script>
+    <script src="display/Display.js"></script>
+    <script src="events/MouseListener.js"></script>
+    <script src="mesh/VBO.js"></script>
+    <script src="mesh/AttributeVBO.js"></script>
+    <script src="mesh/VAO.js"></script>
+    <script src="mesh/Texture.js"></script>
+    <script src="rendering/FrameBufferObject.js"></script>
+    <script src="rendering/uniforms/Uniform.js"></script>
+    <script src="rendering/uniforms/UniformBoolean.js"></script>
+    <script src="rendering/uniforms/UniformVec2.js"></script>
+    <script src="rendering/uniforms/UniformMatrix.js"></script>
+    <script src="rendering/ShaderProgram.js"></script>
+    <script src="rendering/InterfaceRenderer.js"></script>
+    <script src="rendering/SobelRenderer.js"></script>
+    <script src="rendering/MasterRenderer.js"></script>
+
+    <script>
+        /*global MasterRenderer*/
+        var masterRenderer = new MasterRenderer();
+        startRendering(masterRenderer);
+    </script>
+</body>
