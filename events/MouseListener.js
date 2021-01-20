@@ -67,9 +67,7 @@ function handleScale(event){
 }
 
 function handleKey(event){
-    console.log("Received key event " +event.code);
     if(event.key == 'e'){
-        console.log("Pressed E");
         mouse.inverseColor = !mouse.inverseColor;
     }
 }
